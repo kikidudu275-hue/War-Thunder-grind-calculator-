@@ -1,0 +1,10 @@
+# War Thunder Grind Calculator
+Python calculator to estimate RP + SL grind time
+
+## How to use it
+- Enter the missing RP and SL
+- Enter your average per battle
+- It gives you the number of battles and hours
+
+## Tech
+Python - input, calculations, max()
