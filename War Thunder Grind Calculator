@@ -1,0 +1,20 @@
+print("=== WAR THUNDER CALCULATOR ===\n")
+
+missing_rp = int(input("RP you are missing: "))
+rp_per_battle = int(input("Average RP per battle: "))
+
+missing_sl = int(input("SL you are missing: "))
+sl_per_battle = int(input("Average SL per battle: "))
+
+battles_rp = missing_rp / rp_per_battle
+battles_sl = missing_sl / sl_per_battle
+
+# The true number of battles = the larger of the two
+total_battles = max(battles_rp, battles_sl)
+hours = total_battles * 10 / 60
+
+print("\n--- RESULT ---")
+print(f"RP: {battles_rp:.0f} battles")
+print(f"SL: {battles_sl:.0f} battles")
+print(f"\nIn total you need {battles_total:.0f} battles")
+print(f"Approximately {hours:.1f} hours") 
